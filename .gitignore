@@ -1,3 +1,6 @@
 node_modules
 .env
 habittracker.json
+habittracker.db
+habittracker.db-shm
+habittracker.db-wal
