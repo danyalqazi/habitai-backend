@@ -8,7 +8,11 @@ require("./database");
 const app = express();
 
 app.use(cors({
-  origin: "*",
+  origin: [
+    "http://localhost:3000",
+    "https://habitai-frontend.vercel.app",
+    /\.vercel\.app$/,
+  ],
   methods: ["GET", "POST", "DELETE", "PUT"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
